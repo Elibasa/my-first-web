@@ -1,8 +1,45 @@
 <html>
-    <head>
-        <title>Hola, this is my first web :) </title>
-    </head>
-    <body>
-        <h1>Hola, this is my first web</h1>
-    </body>
+
+<head>
+    <title>Hola, this is my first web :) </title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: azure;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button {
+            cursor:grabbing ;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            background-color: rgba(93, 40, 227, 0.662);
+
+
+         }
+         button:hover{
+            background-color: rgba(17, 3, 53, 0.662);
+         }
+    </style>
+</head>
+
+<body>
+    <h1>Hola, this is my first web</h1>
+    <button onclick="interaction()">Click here</button>
+    <script>function interaction() { alert("element not found") }</script>
+</body>
+
 </html>
